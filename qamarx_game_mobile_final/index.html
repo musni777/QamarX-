@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <title>QamarX - Match 3 Game</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="cordova.js"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-logo">
+      <img src="assets/logo.jpg" alt="QamarX Logo">
+    </div>
+    <div class="loading-bar-container">
+      <div class="loading-bar" id="loading-progress"></div>
+    </div>
+    <div class="loading-text">Loading... <span id="loading-percent">0%</span></div>
+    <div class="loading-tip">Get ready to match and crush!</div>
+  </div>
+
+  <!-- Game Container -->
+  <div id="game-container">
+    <img id="logo" src="assets/logo.jpg" alt="QamarX Game Logo">
+    <h1>QamarX</h1>
+    <h2>Match-3 Puzzle Game</h2>
+    
+    <div id="score-display">Score: <span id="score">0</span></div>
+    
+    <div id="game-board-wrapper">
+      <div id="game-board"></div>
+      <div class="explosion"></div>
+    </div>
+    
+    <div class="status-message" id="status-message"></div>
+    
+    <button id="start-game">Start Game</button>
+    <button id="sound-toggle" class="sound-toggle" aria-label="Toggle Sound">🔊</button>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

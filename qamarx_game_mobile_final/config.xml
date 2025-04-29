@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.qamarx.game"
+    versionCode = "10" 
+    version     = "1.0.0" >
+
+  <!-- App Details -->
+  <name>QamarX Game</name>
+  <description>QamarX Match-3 Puzzle Game with cartoon-inspired design and sound effects</description>
+  <author href="https://qamarx.game" email="info@qamarx.game">QamarX Game Team</author>
+
+  <!-- App Configuration -->
+  <preference name="permissions" value="none"/>
+  <preference name="orientation" value="portrait" />
+  <preference name="fullscreen" value="true" />
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="show-splash-screen-spinner" value="false" />
+  <preference name="SplashScreenDelay" value="2000" />
+  <preference name="AutoHideSplashScreen" value="true" />
+  <preference name="SplashMaintainAspectRatio" value="true" />
+  <preference name="FadeSplashScreenDuration" value="300" />
+  <preference name="android-minSdkVersion" value="21" />
+  <preference name="android-targetSdkVersion" value="33" />
+  <preference name="StatusBarOverlaysWebView" value="false" />
+  <preference name="StatusBarBackgroundColor" value="#4A148C" />
+  <preference name="StatusBarStyle" value="lightcontent" />
+
+  <!-- Plugins -->
+  <plugin name="cordova-plugin-statusbar" source="npm" />
+  <plugin name="cordova-plugin-device" source="npm" />
+  <plugin name="cordova-plugin-splashscreen" source="npm" />
+  <plugin name="cordova-plugin-media" source="npm" />
+  <plugin name="cordova-plugin-whitelist" source="npm" />
+
+  <!-- Allow all navigation and intent URLs -->
+  <allow-navigation href="*" />
+  <allow-intent href="*" />
+
+  <!-- Android specific elements -->
+  <platform name="android">
+    <preference name="android-windowSoftInputMode" value="adjustResize" />
+    
+    <!-- Android Icons -->
+    <icon src="assets/logo.jpg" density="ldpi" />
+    <icon src="assets/logo.jpg" density="mdpi" />
+    <icon src="assets/logo.jpg" density="hdpi" />
+    <icon src="assets/logo.jpg" density="xhdpi" />
+    <icon src="assets/logo.jpg" density="xxhdpi" />
+    <icon src="assets/logo.jpg" density="xxxhdpi" />
+    
+    <!-- Android Splash Screens -->
+    <splash src="assets/logo.jpg" density="port-ldpi" />
+    <splash src="assets/logo.jpg" density="port-mdpi" />
+    <splash src="assets/logo.jpg" density="port-hdpi" />
+    <splash src="assets/logo.jpg" density="port-xhdpi" />
+    <splash src="assets/logo.jpg" density="port-xxhdpi" />
+    <splash src="assets/logo.jpg" density="port-xxxhdpi" />
+  </platform>
+  
+  <!-- iOS specific elements -->
+  <platform name="ios">
+    <!-- iOS Icons -->
+    <icon src="assets/logo.jpg" width="180" height="180" />
+    
+    <!-- iOS Splash Screens -->
+    <splash src="assets/logo.jpg" width="640" height="1136" />
+    <splash src="assets/logo.jpg" width="750" height="1334" />
+    <splash src="assets/logo.jpg" width="1242" height="2208" />
+  </platform>
+
+  <!-- Access permissions -->
+  <access origin="*" />
+</widget>
